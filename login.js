@@ -33,7 +33,7 @@ form.addEventListener("submit", function(e){
 
         alert("Login Successful ✅");
 
-        window.location.href = "index.html";
+        window.location.href = "index1.html";
     }
 
 });
