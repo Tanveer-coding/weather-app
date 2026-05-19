@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SkyCast Weather App</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="Home">
+
+<nav class="navbar">
+
+<h2>Weather App</h2>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About this App</a>
+<a href="usage.html">Usage Guide</a>
+</div>
+
+<div class="search-box">
+<input type="text" id="city" placeholder="Search city">
+<button onclick="getWeather()">Search</button>
+</div>
+
+</nav>
+
+
+<h1 class="title">Weather for <span id="cityName">City</span></h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Temperature</h3>
+<h1 id="temp">--°C</h1>
+<p>Min Temp: <span id="minTemp">--</span></p>
+<p>Max Temp: <span id="maxTemp">--</span></p>
+</div>
+
+<div class="card">
+<h3>Humidity Info</h3>
+<h1 id="humidity">--%</h1>
+<p>Feels Like: <span id="feels">--</span></p>
+<p>Humidity: <span id="humidity2">--</span></p>
+</div>
+
+<div class="card">
+<h3>Wind Info</h3>
+<h1 id="wind">-- km/hr</h1>
+<p>Sunrise: <span id="sunrise">--</span></p>
+<p>Sunset: <span id="sunset">--</span></p>
+</div>
+
+</div>
+
+
+
+<h2 class="subtitle">Weather of other common places</h2>
+
+<table>
+
+<tr>
+<th>City</th>
+<th>Cloud</th>
+<th>Feels Like</th>
+<th>Humidity</th>
+<th>Max Temp</th>
+<th>Min Temp</th>
+<th>Sunrise</th>
+<th>Sunset</th>
+<th>Temp</th>
+<th>Wind</th>
+</tr>
+
+<tr>
+<td>Shanghai</td>
+<td id="sh_cloud">--</td>
+<td id="sh_feels">--</td>
+<td id="sh_humidity">--</td>
+<td id="sh_max">--</td>
+<td id="sh_min">--</td>
+<td id="sh_sunrise">--</td>
+<td id="sh_sunset">--</td>
+<td id="sh_temp">--</td>
+<td id="sh_wind">--</td>
+</tr>
+
+<tr>
+<td>Boston</td>
+<td id="bo_cloud">--</td>
+<td id="bo_feels">--</td>
+<td id="bo_humidity">--</td>
+<td id="bo_max">--</td>
+<td id="bo_min">--</td>
+<td id="bo_sunrise">--</td>
+<td id="bo_sunset">--</td>
+<td id="bo_temp">--</td>
+<td id="bo_wind">--</td>
+</tr>
+
+<tr>
+<td>Lucknow</td>
+<td id="lu_cloud">--</td>
+<td id="lu_feels">--</td>
+<td id="lu_humidity">--</td>
+<td id="lu_max">--</td>
+<td id="lu_min">--</td>
+<td id="lu_sunrise">--</td>
+<td id="lu_sunset">--</td>
+<td id="lu_temp">--</td>
+<td id="lu_wind">--</td>
+</tr>
+
+</table>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
