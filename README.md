@@ -89,7 +89,7 @@ Example:
 
 # 🙋‍♂️ Author
 
-**Manjot Singh**
+**Tanveer Singh**
 
 ---
 
